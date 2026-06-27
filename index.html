@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <div class="preview-container">
+        <img class="preview" 
+             src="https://jetking.fpt.edu.vn/wp-content/uploads/2024/05/nen-tang-lap-trinh-vi-dieu-khien-arduino.jpeg" 
+             alt="Lập trình Nhúng & Vi điều khiển" 
+             onmouseover="upDate(this)" 
+             onmouseleave="undo()">
+
+        <img class="preview" 
+             src="https://nhaccumoza.com/mt-content/uploads/2020/09/gioi-thieu-ve-nhac-cu-dan-nhi-cua-viet-nam1.jpg" 
+             alt="Nhạc cụ truyền thống Đàn Nhị" 
+             onmouseover="upDate(this)" 
+             onmouseleave="undo()">
+
+        <img class="preview" 
+             src="https://hocvovinam.wordpress.com/wp-content/uploads/2025/10/cropped-vovinam-viet-vo-dao-logo.png?w=720" 
+             alt="Võ thuật Vovinam Việt Võ Đạo" 
+             onmouseover="upDate(this)" 
+             onmouseleave="undo()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
